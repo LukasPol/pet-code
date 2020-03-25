@@ -52,4 +52,15 @@ class AnimalsController < ApplicationController
       params.require(:animal).permit(:name, :monthlyCost, :type_animal_id, :person_id)
     end
 
+    def verify_total_cost
+      @person_id = params[:animal][:person_id]
+      @animals_person = Animal.joins(:person).where(person_id: person_id)
+      @totalCost = 0 
+
+      @animals_person.each do |animal|
+        @totalCost += animal.monthlyCost
+      end
+
+      #### CONTINUE TEMP
+    end
 end
