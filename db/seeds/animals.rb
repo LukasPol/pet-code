@@ -1,0 +1,7 @@
+Animal.create(name: 'Pé de Pano', monthlyCost: 199.99, type_animal: TypeAnimal.find_by(name: 'Cavalo'), person: Person.find_by(name: 'Jhonny Cash'))
+Animal.create(name: 'Rex', monthlyCost: 99.99, type_animal: TypeAnimal.find_by(name: 'Cachoroo'), person: Person.find_by(name: 'Sid Rose'))
+Animal.create(name: 'Ajudante do Papai Noel', monthlyCost: 99.99, type_animal: TypeAnimal.find_by(name: 'Cachorro'), person: Person.find_by(name: 'Axl Rose'))
+Animal.create(name: 'Rex', monthlyCost: 103.99, type_animal: TypeAnimal.find_by(name: 'Papagaio'), person: Person.find_by(name: 'Joey Ramone'))
+Animal.create(name: 'Flora', monthlyCost: 103.99, type_animal: TypeAnimal.find_by(name: 'Lhama'), person: Person.find_by(name: 'Bruce Dickinson'))
+Animal.create(name: 'Dino', monthlyCost: 177.99, type_animal: TypeAnimal.find_by(name: 'Iguana'), person: Person.find_by(name: 'Kurt Cobain'))
+Animal.create(name: 'Lassie', monthlyCost: 407.99, type_animal: TypeAnimal.find_by(name: 'Ornitorrinco'), person: Person.find_by(name: 'Elvis Presley'))
