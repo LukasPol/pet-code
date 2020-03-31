@@ -1,8 +1,0 @@
-TypeAnimal.create(name: 'Cavalo')
-TypeAnimal.create(name: 'Cachorro')
-TypeAnimal.create(name: 'Papagaio')
-TypeAnimal.create(name: 'Lhama')
-TypeAnimal.create(name: 'Iguana')
-TypeAnimal.create(name: 'Orinitorrinco')
-TypeAnimal.create(name: 'Andorinha')
-TypeAnimal.create(name: 'Gato')

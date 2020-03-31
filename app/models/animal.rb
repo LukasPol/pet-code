@@ -24,11 +24,12 @@ class Animal < ApplicationRecord
         throw(:abort)
       end
     end
+
     def verify_name_person
-      @person_id = self.person_id
-      @personsName = Person.find(person_id).name
-      
-      if @personsName.first.upcase === 'A'
+      @personsName = Person.find(self.person_id).name
+      @animal = TypeAnimal.find(self.type_animal_id).name
+
+      if @animal.downcase === 'gato' && @personsName.first.upcase === 'A'
         self.errors.add(:person, 'Pessoa com inical da letra A, não podem ter gatos')
         throw(:abort)
       end
