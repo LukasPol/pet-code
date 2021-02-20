@@ -1,4 +1,4 @@
-class AnimalsController < ApplicationController
+class Api::V1::AnimalsController < ApplicationController
   before_action :set_animal, only: [:show, :update, :destroy]
 
   # GET /animals
@@ -18,7 +18,7 @@ class AnimalsController < ApplicationController
     @animal = Animal.new(animal_params)
 
     if @animal.save
-      render json: @animal, status: :created, location: @animal
+      render json: @animal, status: :created
     else
       render json: @animal.errors, status: :unprocessable_entity
     end
