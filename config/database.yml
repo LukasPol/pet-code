@@ -11,7 +11,7 @@ development:
   <<: *default
   database: petlove_development
 
-  test:
+test:
   <<: *default
   database: petlove_test
 

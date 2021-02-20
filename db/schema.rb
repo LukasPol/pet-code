@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2020_03_25_202643) do
 
   create_table "people", force: :cascade do |t|
     t.string "name"
-    t.integer "document"
+    t.string "cpf"
     t.date "birthday"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

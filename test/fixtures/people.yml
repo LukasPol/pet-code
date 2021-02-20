@@ -2,10 +2,10 @@
 
 one:
   name: MyString
-  document: 
+  cpf: 12312312311 
   birthday: 2020-03-25
 
 two:
   name: MyString
-  document: 
+  cpf: 12312312311 
   birthday: 2020-03-25

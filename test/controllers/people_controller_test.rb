@@ -12,7 +12,7 @@ class PeopleControllerTest < ActionDispatch::IntegrationTest
 
   test "should create person" do
     assert_difference('Person.count') do
-      post people_url, params: { person: { birthday: @person.birthday, document: @person.document, name: @person.name } }, as: :json
+      post people_url, params: { person: { birthday: @person.birthday, cpf: @person.cpf, name: @person.name } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class PeopleControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update person" do
-    patch person_url(@person), params: { person: { birthday: @person.birthday, document: @person.document, name: @person.name } }, as: :json
+    patch person_url(@person), params: { person: { birthday: @person.birthday, cpf: @person.cpf, name: @person.name } }, as: :json
     assert_response 200
   end
 
