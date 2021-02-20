@@ -1,18 +1,24 @@
-version: '2'
+
+version: '3.7'
 services:
-        db:
-                image: postgres
-                volumes:
-                        - ./tmp/db:/var/lib/postgresql/data
-                environment:
-                        POSTGRES_USER: 'username'
-                        POSTGRES_HOST_AUTH_METHOD: trust
-        web:
-                build: .
-                command: bash -c "rm -f tmp/pids/server.pid && sleep 100000"
-                volumes:
-                        - .:/petlove
-                ports:
-                        - "3000:3000"
-                depends_on:
-                        - db
+  db:
+    image: postgres:12.3
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    env_file: .env
+    ports:
+      - "5432:5432"
+
+  api:
+    build: .
+    command: bash -c "sleep 100000"
+    volumes:
+      - .:/petlove
+    ports:
+      - "3000:3000"
+    env_file: .env
+    depends_on:
+      - db
+
+volumes:
+  postgres:

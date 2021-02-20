@@ -1,6 +1,6 @@
 FROM ruby:2.6.5
 
-RUN apt-get update -qq && apt-get install -y libpq-dev postgresql-client
+RUN apt-get update -qq && apt-get install -y libpq-dev
 
 RUN mkdir /petlove
 WORKDIR /petlove
