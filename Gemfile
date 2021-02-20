@@ -31,6 +31,9 @@ gem 'active_model_serializers'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Use rubocop to help with good practices
+  gem 'rubocop-performance', '1.6.1'
+  gem 'rubocop-rails', '2.6.0'
 end
 
 group :development do
