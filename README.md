@@ -1,30 +1,88 @@
-# README
+# Pet Love (API)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In Heroku: [pet love](https://pet-love-app.herokuapp.com)
 
-Things you may want to cover:
+A Project for added pets and your parent and pet's cost.
 
-* Ruby version
+## Pre-requistes
 
-* System dependencies
+With Docker
+- Docker
+- Docker-compose
 
-* Configuration
+or without docker, you need install:
+- Ruby 2.6.5
+- Rails 6.0.0
+- PostgreSQL 12
 
-* Database creation
+## Setup project with Docker
+1. `$ git clone https://github.com/LukasPol/pet-code.git`
+2. `$ cd pet-code`
+3. `$ cp .env.sample .env`
+4. Write a username and password for database in .env
+5. `$ docker-compose up --build` or with -d
+6. `$ docker-compose exec api bash`
+7. `$ rake db:create db:migrate db:seed`
+8. `$ rails s -b 0.0.0.0`
+9. Open your browser in [localhost:3000](localhost:3000)
 
-* Database initialization
+## Setup project without Docker
+1. `$ git clone https://github.com/LukasPol/pet-code.git`
+2. `$ cd pet-code`
+3. `$ cp .env.sample .env`
+4. Write your database's username and password and change host to localhost in .env
+5. `$ rake db:create db:migrate db:seed`
+6. `$ rails s`
+7. Open your browser in [localhost:3000](localhost:3000)
 
-* How to run the test suite
+## API Documentation
 
-* Services (job queues, cache servers, search engines, etc.)
+Documentation with Postman, [file](https://raw.githubusercontent.com/LukasPol/Challenge-Ruptiva/master/tmp/documentation_postman.json)
+Documentation with Insomnia, [file](https://raw.githubusercontent.com/LukasPol/Challenge-Ruptiva/master/tmp/documentation_insomnia.json)
 
-* Deployment instructions
+## Gems used
+- [Database Cleaner](https://github.com/DatabaseCleaner/database_cleaner)
+```
+Use database_cleaner to erase tests database.
+```
 
-* ...
+- [Dotenv Rails](https://github.com/bkeepers/dotenv)
+
+```
+With the dotenv I can read the file .env and use in application.
+```
+
+- [Factory Bot Rails](https://github.com/thoughtbot/factory_bot_rails)
+
+```
+I can manage the database of fixures too easy on the factories folder, and the rspec has all compatibility.
+```
+
+- [Ffaker](https://github.com/ffaker/ffaker)
+
+```
+This gem is to create random data to models I used in tests.
+```
+- [Rack Cors](https://github.com/cyu/rack-cors)
+
+```
+Rack Middleware for handling Cross-Origin Resource Sharing (CORS), which makes cross-origin AJAX possible.
+```
+
+- [Rspec](https://github.com/rspec/rspec-rails)
+
+```
+to create tests for the project
+```
+
+- [Rubocop Rails](https://github.com/rubocop-hq/rubocop-rails)
+
+```
+Use this gem to help with good practices.
+```
 
 
-## Questões
+<!-- ## Questões
 
 As questões devem ser respondidas com queries do `ActiveRecord`.
 Inclua os trechos de código que respondem as perguntas abaixo:
@@ -52,5 +110,5 @@ Inclua os trechos de código que respondem as perguntas abaixo:
 
 ### Levando em consideração o custo mensal, qual será o custo de 3 meses de cada pessoa?
 
-	SUA RESPOSTA AQUI
+	SUA RESPOSTA AQUI -->
 
