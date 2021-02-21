@@ -1,0 +1,41 @@
+pt-BR:
+  activerecord:
+    attributes:
+      animal: 
+        name: "Nome"
+        monthlyCost: "Custp p/ mês"
+        type_animal: "Tipo de animal"
+        person: "Dono(a)"
+      person:
+        name: "Nome"
+        cpf: "CPF"
+        birthday: "Data de nascimento"
+      type_animal:
+        name: "Nome"
+      user:
+        email: "email"
+        full_name: "Nome"
+        password: "Senha"
+        password_confimation: "Confirmação da senha"
+
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "é obrigatório"
+              taken: "já cadastrado"
+            password:
+              too_short: "precisa ser maior que 6"
+              blank: "é obrigatório"
+            password_confirmation:
+              confirmation: "Por favor, repita a senha"
+              blank: "é obrigatório"
+            full_name:
+              blank: "é obrigatório"
+
+      messages:
+        record_invalid: 'A validação falhou: %{errors}'
+        restrict_dependent_destroy:
+          has_one: Não é possível excluir o registro pois existe um %{record} dependente
+          has_many: Não é possível excluir o registro pois existem %{record} dependentes

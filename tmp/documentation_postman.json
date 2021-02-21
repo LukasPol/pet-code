@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Person",
+			"name": "Animal",
 			"item": [
 				{
 					"name": "Index",
@@ -14,7 +14,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://pet-love-app.herokuapp.com/api/v1/people",
+							"raw": "https://pet-love-app.herokuapp.com/api/v1/animals",
 							"protocol": "https",
 							"host": [
 								"pet-love-app",
@@ -24,7 +24,7 @@
 							"path": [
 								"api",
 								"v1",
-								"people"
+								"animals"
 							]
 						}
 					},
@@ -36,7 +36,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://pet-love-app.herokuapp.com/api/v1/people/1",
+							"raw": "https://pet-love-app.herokuapp.com/api/v1/animals/1",
 							"protocol": "https",
 							"host": [
 								"pet-love-app",
@@ -46,7 +46,7 @@
 							"path": [
 								"api",
 								"v1",
-								"people",
+								"animals",
 								"1"
 							]
 						}
@@ -60,7 +60,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Lukas Pol\",\n\t\"cpf\": \"12312312311\",\n\t\"birthday\": \"2020-02-26\"\n}",
+							"raw": "{\n  \"name\": \"Nick\",\n  \"monthlyCost\": 100.99,\n  \"type_animal_id\": 1,\n  \"person_id\":1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -68,7 +68,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://pet-love-app.herokuapp.com/api/v1/people",
+							"raw": "https://pet-love-app.herokuapp.com/api/v1/animals",
 							"protocol": "https",
 							"host": [
 								"pet-love-app",
@@ -78,7 +78,7 @@
 							"path": [
 								"api",
 								"v1",
-								"people"
+								"animals"
 							]
 						}
 					},
@@ -91,7 +91,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Lukas\"\n}",
+							"raw": "{\n\t\"name\": \"Nickk\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -99,7 +99,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://pet-love-app.herokuapp.com/api/v1/people/8",
+							"raw": "https://pet-love-app.herokuapp.com/api/v1/animals/8",
 							"protocol": "https",
 							"host": [
 								"pet-love-app",
@@ -109,7 +109,7 @@
 							"path": [
 								"api",
 								"v1",
-								"people",
+								"animals",
 								"8"
 							]
 						}
@@ -122,7 +122,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://pet-love-app.herokuapp.com/api/v1/people/8",
+							"raw": "https://pet-love-app.herokuapp.com/api/v1/animals/8",
 							"protocol": "https",
 							"host": [
 								"pet-love-app",
@@ -132,7 +132,7 @@
 							"path": [
 								"api",
 								"v1",
-								"people",
+								"animals",
 								"8"
 							]
 						}
@@ -278,7 +278,7 @@
 			]
 		},
 		{
-			"name": "Animal",
+			"name": "Person",
 			"item": [
 				{
 					"name": "Index",
@@ -286,7 +286,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://pet-love-app.herokuapp.com/api/v1/animals",
+							"raw": "https://pet-love-app.herokuapp.com/api/v1/people",
 							"protocol": "https",
 							"host": [
 								"pet-love-app",
@@ -296,7 +296,7 @@
 							"path": [
 								"api",
 								"v1",
-								"animals"
+								"people"
 							]
 						}
 					},
@@ -308,7 +308,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://pet-love-app.herokuapp.com/api/v1/animals/1",
+							"raw": "https://pet-love-app.herokuapp.com/api/v1/people/1",
 							"protocol": "https",
 							"host": [
 								"pet-love-app",
@@ -318,7 +318,7 @@
 							"path": [
 								"api",
 								"v1",
-								"animals",
+								"people",
 								"1"
 							]
 						}
@@ -332,7 +332,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"Nick\",\n  \"monthlyCost\": 100.99,\n  \"type_animal_id\": 1,\n  \"person_id\":1\n}",
+							"raw": "{\n\t\"name\": \"Lukas Pol\",\n\t\"cpf\": \"12312312398\",\n\t\"birthday\": \"2020-02-26\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -340,7 +340,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://pet-love-app.herokuapp.com/api/v1/animals",
+							"raw": "https://pet-love-app.herokuapp.com/api/v1/people",
 							"protocol": "https",
 							"host": [
 								"pet-love-app",
@@ -350,7 +350,7 @@
 							"path": [
 								"api",
 								"v1",
-								"animals"
+								"people"
 							]
 						}
 					},
@@ -363,7 +363,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Nickk\"\n}",
+							"raw": "{\n\t\"name\": \"Lukas\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -371,7 +371,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://pet-love-app.herokuapp.com/api/v1/animals/8",
+							"raw": "https://pet-love-app.herokuapp.com/api/v1/people/8",
 							"protocol": "https",
 							"host": [
 								"pet-love-app",
@@ -381,7 +381,7 @@
 							"path": [
 								"api",
 								"v1",
-								"animals",
+								"people",
 								"8"
 							]
 						}
@@ -394,7 +394,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://pet-love-app.herokuapp.com/api/v1/animals/8",
+							"raw": "https://pet-love-app.herokuapp.com/api/v1/people/8",
 							"protocol": "https",
 							"host": [
 								"pet-love-app",
@@ -404,8 +404,144 @@
 							"path": [
 								"api",
 								"v1",
-								"animals",
+								"people",
 								"8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User (auth)",
+			"item": [
+				{
+					"name": "sign_in",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"test@example.com\",\n\t\"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://pet-love-app.herokuapp.com/api/v1/auth/sign_in",
+							"protocol": "https",
+							"host": [
+								"pet-love-app",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"sign_in"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sign_out",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://pet-love-app.herokuapp.com/api/v1/auth/sign_out",
+							"protocol": "https",
+							"host": [
+								"pet-love-app",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"sign_out"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sign_up",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"test@example.com\",\n\t\"password\": \"123456\",\n\t\"password_confirmation\": \"123456\",\n\t\"full_name\": \"Testador\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://pet-love-app.herokuapp.com/api/v1/auth",
+							"protocol": "https",
+							"host": [
+								"pet-love-app",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change_password",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"test@example.com\",\n\t\"redirect_url\": \"google.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/auth/password",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"password"
 							]
 						}
 					},
