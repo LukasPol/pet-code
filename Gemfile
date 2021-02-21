@@ -28,6 +28,11 @@ gem 'rack-attack'
 
 gem 'active_model_serializers'
 
+# Use devise_token_auth as user token authentication
+gem 'devise_token_auth'
+# Use to create token authentication
+gem 'simple_token_authentication', '1.17.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
