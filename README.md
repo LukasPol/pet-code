@@ -81,6 +81,11 @@ to create tests for the project
 Use this gem to help with good practices.
 ```
 
+- [Simple Token Authentication](https://github.com/gonzalo-bulnes/simple_token_authentication)
+
+```
+This gem was by default on devise, then I used in this application to manage the token authentication of user (on login).
+```
 
 <!-- ## Questões
 
