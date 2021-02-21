@@ -1,4 +1,5 @@
 class Api::V1::TypeAnimalsController < ApplicationController
+  skip_before_action :authenticate_user, only: [:index, :show]
   before_action :set_type_animal, only: [:show, :update, :destroy]
 
   # GET /type_animals
