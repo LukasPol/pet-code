@@ -34,11 +34,13 @@ module Petlove
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
-    config.middleware.insert_before 0, Rack::Cors do
-      allow do
-        origins '*'
-        resource '*', headers: :any, methods: [:get, :post, :options]
-      end
-    end
+    config.time_zone = 'Brasilia'
+
+    config.i18n.default_locale = 'pt-BR'
+
+    config.middleware.use ActionDispatch::Flash
+
+    config.action_mailer.default_options = { from: 'lukaspaespol@gmail.com' }
+    config.action_mailer.default_url_options = { host: 'https://pet-love-app.herokuapp.com' }
   end
 end
