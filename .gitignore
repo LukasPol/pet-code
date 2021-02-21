@@ -12,6 +12,8 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+!/tmp/documentation_insominia.json
+!/tmp/documentation_postman.json
 
 # Ignore uploaded files in development.
 /storage/*
