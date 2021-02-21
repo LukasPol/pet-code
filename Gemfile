@@ -46,6 +46,7 @@ group :development do
 end
 
 group :test do
+  gem 'rails-controller-testing'
   # Use database_cleaner to erase tests database
   gem 'database_cleaner', '1.8.5'
   # Use factory_bot_rails to help with the tests

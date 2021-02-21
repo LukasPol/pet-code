@@ -17,8 +17,6 @@ class Animal < ApplicationRecord
         @totalCost += animal.monthlyCost
       end
 
-      puts @totalCost
-
       if @totalCost > 1000
         self.errors.add(:monthlyCost, 'Curto mensal maior q 100')
         throw(:abort)
