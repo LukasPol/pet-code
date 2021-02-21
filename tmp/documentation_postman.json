@@ -57,7 +57,13 @@
 					"name": "Create",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "WsQw4Be9f1k1Kn47myx_",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n  \"name\": \"Nick\",\n  \"monthlyCost\": 100.99,\n  \"type_animal_id\": 1,\n  \"person_id\":1\n}",
@@ -88,7 +94,13 @@
 					"name": "Update",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "WsQw4Be9f1k1Kn47myx_",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\t\"name\": \"Nickk\"\n}",
@@ -120,7 +132,13 @@
 					"name": "Delete",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "WsQw4Be9f1k1Kn47myx_",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "https://pet-love-app.herokuapp.com/api/v1/animals/8",
 							"protocol": "https",
@@ -193,7 +211,13 @@
 					"name": "Create",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "WsQw4Be9f1k1Kn47myx_",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\t\"name\": \"Leãoo\"\n}",
@@ -224,7 +248,13 @@
 					"name": "Update Copy",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "WsQw4Be9f1k1Kn47myx_",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\t\"name\": \"Leão\"\n}",
@@ -256,7 +286,13 @@
 					"name": "Delete",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "WsQw4Be9f1k1Kn47myx_",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "https://pet-love-app.herokuapp.com/api/v1/type_animals/9",
 							"protocol": "https",
@@ -329,7 +365,13 @@
 					"name": "Create",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "WsQw4Be9f1k1Kn47myx_",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\t\"name\": \"Lukas Pol\",\n\t\"cpf\": \"12312312398\",\n\t\"birthday\": \"2020-02-26\"\n}",
@@ -360,7 +402,13 @@
 					"name": "Update",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "WsQw4Be9f1k1Kn47myx_",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "{\n\t\"name\": \"Lukas\"\n}",
@@ -392,7 +440,13 @@
 					"name": "Delete",
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "WsQw4Be9f1k1Kn47myx_",
+								"type": "text"
+							}
+						],
 						"url": {
 							"raw": "https://pet-love-app.herokuapp.com/api/v1/people/8",
 							"protocol": "https",
@@ -418,11 +472,8 @@
 			"item": [
 				{
 					"name": "sign_in",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
@@ -454,11 +505,11 @@
 				{
 					"name": "sign_out",
 					"request": {
-						"method": "GET",
+						"method": "DELETE",
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "",
+								"value": "WsQw4Be9f1k1Kn47myx_",
 								"type": "text"
 							}
 						],
@@ -482,11 +533,8 @@
 				},
 				{
 					"name": "sign_up",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
@@ -516,11 +564,8 @@
 				},
 				{
 					"name": "change_password",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
