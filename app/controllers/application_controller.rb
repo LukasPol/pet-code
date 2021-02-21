@@ -1,10 +1,10 @@
 class ApplicationController < ActionController::API
-	include DeviseTokenAuth::Concerns::SetUserByToken
+  include DeviseTokenAuth::Concerns::SetUserByToken
 
-	# Config Devise
+  # Config Devise
   include DeviseTokenAuth::Concerns::SetUserByToken
   before_action :authenticate_user, unless: :devise_controller?
-	before_action :configure_permitted_parameters, if: :devise_controller?
+  before_action :configure_permitted_parameters, if: :devise_controller?
 
   protected
     def configure_permitted_parameters
@@ -12,7 +12,7 @@ class ApplicationController < ActionController::API
       devise_parameter_sanitizer.permit(:account_update, keys: [:full_name])
     end
 
-	private
+  private
     def authentication_token
       request.headers['Authorization']
     end

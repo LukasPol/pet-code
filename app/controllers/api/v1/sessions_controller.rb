@@ -6,7 +6,7 @@ class Api::V1::SessionsController < ApplicationController
     if (not @user.nil?) && valid_password?
       response.set_header('Authorization', @user.authentication_token)
       render json: {
-        'Authorization': @user.authentication_token, 
+        'Authorization': @user.authentication_token,
         'id': @user.id,
         'full_name': @user.full_name,
         'email': @user.email
